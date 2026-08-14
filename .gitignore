@@ -1,0 +1,178 @@
+# ============================================================
+# .gitignore — programa guardiões ambientais
+# ============================================================
+
+# ---- SISTEMA OPERACIONAL ----
+
+# windows
+thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macos
+.dSYM/
+.DS_Store
+
+# linux
+*~
+
+# ---- EDITORES / IDEs ----
+
+# vscode
+.vscode/
+
+# jetbrains
+.idea/
+
+# vim / emacs
+*.swp
+*.swo
+*~
+.\#*
+
+# ---- PYTHON ----
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# ambientes virtuais
+venv/
+.venv/
+env/
+.env
+
+# distribuição / build
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---- QGIS / SIG ----
+
+# projetos qgis (geralmente muito grandes)
+*.qgs~
+
+# shapefiles auxiliares
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qpj
+*.sbn
+*.sbx
+*.fbn
+*.fbx
+*.ain
+*.aih
+*.atx
+*.ixs
+*.mxs
+*.qix
+*.qpj
+
+# ---- DRONES / FOTOGRAMETRIA ----
+
+*.las
+*.laz
+*.ply
+*.obj
+*.fbx
+*.e57
+
+# imagens brutas grandes
+*.raw
+*.dng
+*.nef
+*.cr2
+*.arw
+
+# mosaicos / ortofotos grandes
+*.tif
+*.tiff
+*.ecw
+*.sid
+*.jp2
+*.mrsid
+
+# ---- ARQUIVOS TEMPORÁRIOS ----
+
+# backups
+*.bak
+*.backup
+*.old
+*.tmp
+
+# logs
+*.log
+*.out
+
+# ---- OFFICE / DOCUMENTOS ----
+
+# temporários do office
+~$*.docx
+~$*.xlsx
+~$*.pptx
+~$*.doc
+~$*.xls
+~$*.ppt
+
+# ---- DADOS SENSÍVEIS (NUNCA VERSIONAR) ----
+
+# credenciais e segredos
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials/
+secrets/
+*.env
+
+# dados pessoais
+*cpf*
+*CNPJ*
+
+# ---- PROJETOS DE GRANDE PORTE ----
+
+# evite versionar diretórios muito grandes
+/data_raw/
+/datasets/
+/models/
+
+# ---- R ----
+
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj
+*.Rproj.user
+
+# ---- NODE / JS (caso use) ----
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# ---- OUTROS ----
+
+# arquivos de imagem muito grandes (acima de 50MB) devem ser gerenciados externamente
+# use git-lfs para esses casos.
+
+# cache de pesquisa
+.cache/
+
+# ---- IMPORTANTE ----
+# não ignorar:
+# - .md, .txt, .pdf pequenos
+# - LICENSE, README.md, CONTRIBUTING.md, CHANGELOG.md, SECURITY.md
+# - scripts pequenos em scripts/
