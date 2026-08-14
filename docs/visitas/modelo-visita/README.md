@@ -19,8 +19,8 @@ visitas/AAAA/municipio/
 
 1. crie a pasta `visitas/AAAA/municipio/` seguindo nomenclatura;
 2. copie este `README.md` (ou use como referência) e ajuste dados gerais;
-3. preencha os arquivos conforme a metodologia [`../../../metodologia/skill-relatorio-tecnico.md`](../../../metodologia/skill-relatorio-tecnico.md);
-4. aplique o checklist de qualidade antes de mover para [`../../../relatorios/finalizados/`](../../../relatorios/finalizados/).
+3. preencha os arquivos conforme a metodologia [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md);
+4. aplique o checklist de qualidade antes de mover para [`../../relatorios/finalizados/`](../../relatorios/finalizados/).
 
 ## dados gerais a preencher
 

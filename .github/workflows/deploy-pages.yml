@@ -1,0 +1,109 @@
+# Workflow gerado pela skill gh-pages-inteligente
+# Não editar manualmente a menos que necessário.
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+# Permissões mínimas: Pages lê contents, deploy usa id-token OIDC
+permissions:
+  contents: read
+  pages: deploy
+  id-token: write
+
+# Evita deploys concorrentes
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: '3.12'
+
+jobs:
+  build:
+    name: Build MkDocs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # histórico completo para git-revision-date-localized
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validar configuração
+        run: |
+          mkdocs build --strict --verbose 2>&1 | tee build.log
+          # mkdocs build --strict falha se houver warning
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+          retention-days: 30
+
+  deploy:
+    name: Deploy Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  audit:
+    name: Auditoria de segurança
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verificar credenciais no conteúdo publicado
+        run: |
+          python -c "
+          import re, sys
+          patterns = [
+              (r'(?i)(api[_-]?key|secret|token|password)\s*[=:]\s*[\"'']?[\w-]{16,}', 'token'),
+              (r'\d{3}\.\d{3}\.\d{3}-\d{2}', 'cpf'),
+              (r'sk-[A-Za-z0-9]{20,}', 'openai-key'),
+              (r'ghp_[A-Za-z0-9]{30,}', 'github-pat'),
+          ]
+          issues = []
+          import os
+          for root, dirs, files in os.walk('site'):
+              for f in files:
+                  p = os.path.join(root, f)
+                  try:
+                      with open(p, 'r', encoding='utf-8', errors='ignore') as fh:
+                          content = fh.read()
+                      for rx, label in patterns:
+                          if re.search(rx, content):
+                              issues.append(f'{p}: {label}')
+                  except Exception:
+                      pass
+          if issues:
+              print('POSSÍVEIS CREDENCIAIS DETECTADAS:')
+              for i in issues:
+                  print(f'  - {i}')
+              sys.exit(1)
+          print('OK - nenhuma credencial detectada')
+          "

@@ -40,11 +40,11 @@ definir o fluxo padrão para **planejamento, execução e documentação** de vi
 - conferir **coordenadas** e dados;
 - transcrever **entrevistas**;
 - consolidar **anotações**;
-- arquivar tudo em [`../../visitas/`](../../visitas/).
+- arquivar tudo em [`../visitas/`](../visitas/).
 
 ### 5. produção de relatório
 
-- aplicar metodologia [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md);
+- aplicar metodologia [`../metodologia/skill-relatorio-tecnico.md`](../metodologia/skill-relatorio-tecnico.md);
 - utilizar template padrão;
 - revisar conforme checklist de qualidade.
 

@@ -17,7 +17,7 @@ conter templates prontos para a produção de novos relatórios, garantindo padr
 ## uso
 
 1. copie o modelo desejado para [`../em-producao/`](../em-producao/) com a nomenclatura padronizada `AAAA-MM-DD_nome.md`;
-2. preencha as seções conforme a metodologia [`../../../metodologia/skill-relatorio-tecnico.md`](../../../metodologia/skill-relatorio-tecnico.md);
+2. preencha as seções conforme a metodologia [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md);
 3. aplique o **checklist de qualidade**;
 4. mova para [`../finalizados/`](../finalizados/) após aprovação.
 

@@ -32,7 +32,7 @@ cada local visitado deve ter um registro com:
 - resolução mínima definida pelo programa;
 - gravar **metadados** (autor, data, local, evento);
 - nomenclatura: `AAAA-MM-DD_local_descricao_NNN.jpg`;
-- armazenar em [`../../imagens/visitas/`](../../imagens/visitas/).
+- armazenar em [`../imagens/visitas/`](../imagens/visitas/).
 
 ## entrevistas
 

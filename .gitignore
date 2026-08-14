@@ -176,3 +176,4 @@ package-lock.json.bak
 # - .md, .txt, .pdf pequenos
 # - LICENSE, README.md, CONTRIBUTING.md, CHANGELOG.md, SECURITY.md
 # - scripts pequenos em scripts/
+site/

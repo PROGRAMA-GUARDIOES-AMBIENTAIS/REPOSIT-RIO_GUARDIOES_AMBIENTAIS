@@ -20,7 +20,7 @@ AAAA-MM-DD_nome-do-relatorio.md
 - [ ] imagens legendadas;
 - [ ] coordenadas com sistema de referência;
 - [ ] revisão textual;
-- [ ] checklist de qualidade [`../../../metodologia/skill-relatorio-tecnico.md`](../../../metodologia/skill-relatorio-tecnico.md) aplicado.
+- [ ] checklist de qualidade [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md) aplicado.
 
 ## ao concluir
 

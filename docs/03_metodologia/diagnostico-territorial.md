@@ -29,7 +29,7 @@ o diagnóstico combina:
 - **mapeamento participativo**;
 - **análise técnica** da equipe.
 
-> detalhamento metodológico em [`metodologia-de-visitas.md`](./metodologia-de-visitas.md) e [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md).
+> detalhamento metodológico em [`metodologia-de-visitas.md`](./metodologia-de-visitas.md) e [`../metodologia/skill-relatorio-tecnico.md`](../metodologia/skill-relatorio-tecnico.md).
 
 ## quando produzir
 

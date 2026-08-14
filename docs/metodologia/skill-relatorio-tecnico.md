@@ -182,8 +182,8 @@ propor **ações concretas**:
 
 ## 6. exemplos e modelos
 
-- modelo padrão: [`../../relatorios/modelos/`](../../relatorios/modelos/);
-- exemplo em construção: [`../../visitas/2026/garanhuns/`](../../visitas/2026/garanhuns/).
+- modelo padrão: [`../relatorios/modelos/`](../relatorios/modelos/);
+- exemplo em construção: [`../visitas/2026/garanhuns/`](../visitas/2026/garanhuns/).
 
 ---
 

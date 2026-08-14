@@ -39,13 +39,13 @@ exemplos:
 
 ## armazenamento
 
-- **em produção**: [`../../relatorios/em-producao/`](../../relatorios/em-producao/);
-- **finalizados**: [`../../relatorios/finalizados/`](../../relatorios/finalizados/);
-- **modelos**: [`../../relatorios/modelos/`](../../relatorios/modelos/).
+- **em produção**: [`../relatorios/em-producao/`](../relatorios/em-producao/);
+- **finalizados**: [`../relatorios/finalizados/`](../relatorios/finalizados/);
+- **modelos**: [`../relatorios/modelos/`](../relatorios/modelos/).
 
 ## metodologia
 
-a metodologia aplicada aos relatórios está documentada em [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md).
+a metodologia aplicada aos relatórios está documentada em [`../metodologia/skill-relatorio-tecnico.md`](../metodologia/skill-relatorio-tecnico.md).
 
 ## normas
 

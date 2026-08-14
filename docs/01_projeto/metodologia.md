@@ -52,7 +52,7 @@ a metodologia do programa combina **visita técnica**, **diagnóstico territoria
 - sistema de nomenclatura padronizado;
 - prompts reutilizáveis para produção documental.
 
-> detalhes metodológicos em [`metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md) e [`../03_metodologia/`](../03_metodologia/).
+> detalhes metodológicos em [`metodologia/skill-relatorio-tecnico.md`](../metodologia/skill-relatorio-tecnico.md) e [`../03_metodologia/`](../03_metodologia/).
 
 ---
 

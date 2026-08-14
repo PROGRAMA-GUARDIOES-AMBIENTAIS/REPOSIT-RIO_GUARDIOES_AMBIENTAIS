@@ -34,8 +34,8 @@ cada arquivo deve ter:
 as fotografias deste diretório alimentam:
 
 - [`../../docs/06_infraestrutura/`](../../docs/06_infraestrutura/);
-- [`../../visitas/`](../../visitas/);
-- [`../../relatorios/`](../../relatorios/).
+- [`../visitas/`](../visitas/);
+- [`../relatorios/`](../relatorios/).
 
 ---
 

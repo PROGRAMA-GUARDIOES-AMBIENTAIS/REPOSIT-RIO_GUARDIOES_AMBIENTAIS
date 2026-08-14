@@ -35,11 +35,11 @@
 
 ## relatório técnico
 
-> **documento em construção.** relatório completo será produzido conforme metodologia [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md) e arquivado em [`../../relatorios/`](../../relatorios/).
+> **documento em construção.** relatório completo será produzido conforme metodologia [`../../../metodologia/skill-relatorio-tecnico.md`](../../../metodologia/skill-relatorio-tecnico.md) e arquivado em [`../../../relatorios/`](../../../relatorios/).
 
 ## fotografias
 
-> as fotografias serão organizadas em [`../../imagens/visitas/`](../../imagens/visitas/) seguindo padrão de nomenclatura `AAAA-MM-DD_local_descricao_NNN.jpg`.
+> as fotografias serão organizadas em [`../../../imagens/visitas/`](../../../imagens/visitas/) seguindo padrão de nomenclatura `AAAA-MM-DD_local_descricao_NNN.jpg`.
 
 ---
 

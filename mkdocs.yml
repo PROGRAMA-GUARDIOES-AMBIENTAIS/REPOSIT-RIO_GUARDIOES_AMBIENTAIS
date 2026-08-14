@@ -1,0 +1,171 @@
+# MkDocs configuration gerado pela skill gh-pages-inteligente
+site_name: Programa Guardiões Ambientais
+site_description: Base de conhecimento do Programa Guardiões Ambientais 
+site_url: https://PROGRAMA-GUARDIOES-AMBIENTAIS.github.io/REPOSIT-RIO_GUARDIOES_AMBIENTAIS
+site_author: Equipe do projeto
+repo_url: https://github.com/PROGRAMA-GUARDIOES-AMBIENTAIS/REPOSIT-RIO_GUARDIOES_AMBIENTAIS
+repo_name: PROGRAMA-GUARDIOES-AMBIENTAIS/REPOSIT-RIO_GUARDIOES_AMBIENTAIS
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: site
+
+# Pastas paralelas (metodologia, relatorios, visitas, dados, imagens, prompts)
+# são acessadas via symlinks em docs/.
+# NOTA: NÃO excluir 'site/' aqui — ele é uma pasta real do site com páginas automáticas.
+
+exclude_docs: |
+  ^site/
+  ^_site/
+  ^node_modules/
+  ^venv/
+  ^\.venv/
+  ^scripts/
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  font:
+    text: Noto Sans
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/PROGRAMA-GUARDIOES-AMBIENTAIS/REPOSIT-RIO_GUARDIOES_AMBIENTAIS
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      social_url_shorthand: true
+
+plugins:
+  - search:
+  - git-revision-date-localized:
+      type: date
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+nav:
+  - Início: README.md
+  - Documentação:
+      - Projeto:
+          - Descrição: 01_projeto/descricao.md
+          - Objetivos: 01_projeto/objetivos.md
+          - Metodologia: 01_projeto/metodologia.md
+          - Eixos de Atuação: 01_projeto/eixos-de-atuacao.md
+          - Governança: 01_projeto/governanca.md
+      - Guardiões:
+          - Perfil: 02_guardioes-ambientais/perfil.md
+          - Formação: 02_guardioes-ambientais/formacao.md
+          - Competências: 02_guardioes-ambientais/competencias.md
+          - Atividades: 02_guardioes-ambientais/atividades.md
+      - Sobre o Site: site/README.md
+  - Metodologia:
+      - Visitas Técnicas: 03_metodologia/metodologia-de-visitas.md
+      - Diagnóstico Territorial: 03_metodologia/diagnostico-territorial.md
+      - Protocolo de Registro: 03_metodologia/protocolo-de-registro.md
+      - Skill de Relatório Técnico: metodologia/skill-relatorio-tecnico.md
+  - Visitas Técnicas:
+      - Índice Geral: 05_visitas-tecnicas/README.md
+      - Garanhuns (2026):
+          - Apresentação: visitas/2026/garanhuns/README.md
+          - Roteiro: visitas/2026/garanhuns/roteiro.md
+          - Locais: visitas/2026/garanhuns/locais.md
+          - Infraestrutura: visitas/2026/garanhuns/infraestrutura.md
+          - Coordenadas: visitas/2026/garanhuns/coordenadas.md
+          - Diagnóstico: visitas/2026/garanhuns/diagnostico.md
+          - Referências: visitas/2026/garanhuns/referencias.md
+      - Modelo de Visita: visitas/modelo-visita/README.md
+  - Relatórios:
+      - Índice Geral: 04_relatorios/README.md
+      - Finalizados: relatorios/finalizados/README.md
+      - Em Produção: relatorios/em-producao/README.md
+      - Modelos: relatorios/modelos/README.md
+  - Infraestrutura:
+      - Aterros: 06_infraestrutura/aterros.md
+      - Compostagem: 06_infraestrutura/compostagem.md
+      - Reciclagem: 06_infraestrutura/reciclagem.md
+      - Sementeiras: 06_infraestrutura/sementeiras.md
+      - Parques: 06_infraestrutura/parques.md
+      - Equipamentos Públicos: 06_infraestrutura/equipamentos-publicos.md
+  - Dados:
+      - Coordenadas: dados/coordenadas/README.md
+      - Mapas: dados/mapas/README.md
+      - Tabelas: dados/tabelas/README.md
+      - Geodados: dados/geodados/README.md
+  - Prompts:
+      - Relatório Técnico: prompts/relatorio-tecnico.md
+      - Visita Técnica: prompts/visita-tecnica.md
+      - Diagnóstico Territorial: prompts/diagnostico-territorial.md
+      - Normalização ABNT: prompts/normalizacao-abnt.md
+      - Pesquisa de Imagens: prompts/pesquisa-imagens.md
+  - Referências:
+      - Bibliografia: 08_referencias/bibliografia.md
+  - Atualizações:
+      - Atualizações: site/atualizacoes.md
+      - Linha do Tempo: site/linha-do-tempo.md
+      - Indicadores: site/indicadores.md

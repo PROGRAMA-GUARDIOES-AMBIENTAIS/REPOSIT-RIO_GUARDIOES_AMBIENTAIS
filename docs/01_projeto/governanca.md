@@ -19,7 +19,7 @@ a governança deste repositório baseia-se em:
 - parceiros institucionais;
 - pesquisadores e extensionistas convidados.
 
-> nomes específicos serão definidos em [`CONTRIBUTING.md`](../../CONTRIBUTING.md) quando validados pela coordenação.
+> nomes específicos serão definidos em [`CONTRIBUTING.md`](../CONTRIBUTING.md) quando validados pela coordenação.
 
 ## como documentos são revisados
 
@@ -30,7 +30,7 @@ a governança deste repositório baseia-se em:
 
 ## como relatórios são aprovados
 
-- relatórios seguem metodologia [`../../metodologia/skill-relatorio-tecnico.md`](../../metodologia/skill-relatorio-tecnico.md);
+- relatórios seguem metodologia [`../metodologia/skill-relatorio-tecnico.md`](../metodologia/skill-relatorio-tecnico.md);
 - passam por **checklist de qualidade** (conteúdo, fontes, imagens, técnico);
 - são revisados antes de serem movidos para `relatorios/finalizados/`.
 

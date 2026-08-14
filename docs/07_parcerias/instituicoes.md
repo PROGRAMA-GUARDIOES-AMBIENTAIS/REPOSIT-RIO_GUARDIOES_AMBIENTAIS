@@ -2,7 +2,7 @@
 
 > documento em construção.
 
-> **atenção:** não incluir dados pessoais ou informações privadas. consultar [`SECURITY.md`](../../SECURITY.md).
+> **atenção:** não incluir dados pessoais ou informações privadas. consultar [`SECURITY.md`](../SECURITY.md).
 
 ## objetivo
 
